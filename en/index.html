@@ -23,7 +23,7 @@
     <main>
       <article>
         <h1>Privacy policy</h1>
-        <p class="updated">G Navigation for Android - version 16, last updated: 31 October 2026.</p>
+        <p class="updated">G Navigation for Android - version 16, last updated: 1 November 2026.</p>
         <p>G Navigation is a navigation app for motorbikes and cars in Vietnam that sends turn directions, maps and calls to your watch. It is developed and run by G Navigation (“we”). This page explains what data the app collects, what it is used for, how long it is kept, who can see it and how you control it. This policy follows Vietnam's Personal Data Protection Law No. 91/2025/QH15 and Decree 356/2025/ND-CP.</p>
         <p><strong>The short version:</strong> the app has no ads, uses no advertising identifier, and does not sell or share your data for marketing. Our servers keep no movement history linked to you. Notifications, contacts, calls, the microphone and the camera are used only when you turn on the feature that needs them.</p>
         <section id="collect">
@@ -36,6 +36,8 @@
             <li><strong>On the device:</strong> to show where you are on the map, compare your speed with the limit and guide you turn by turn. While you navigate, the app keeps reading your location in the background so directions are not lost when the screen is off; background location is optional and asked separately.</li>
             <li><strong>Sent to the server per request:</strong> the map area in view, to return the map, signs, cameras and speed limits around it; your start, destination and vehicle, to plan a route; your location and heading, to reroute when you leave the route; your current location with what you type, to rank search results by distance. These requests are answered, and that is all; the server keeps no movement history linked to you. Location and speed during a trip, without your account, are also used to improve routing and arrival times.</li>
           </ul>
+          <h3>Current weather</h3>
+          <p>Only while you navigate, the app sends your current GPS location, rounded to two decimal places, directly over HTTPS to MET Norway to get the weather there. MET receives the coordinates, IP address and app identification; this request sends no account information or complete route.</p>
           <h3>Voice search</h3>
           <p>When you tap the microphone, your speech is turned into text on the phone; only if you pick an online recogniser is the audio sent to it, under its own policy. We receive only the resulting text, never a recording, and keep no recording. The app listens only while the microphone is open.</p>
           <h3>Community reports</h3>
@@ -83,6 +85,7 @@
                 <tr><th scope="row">Map service</th><td data-label="What it receives">IP address, the map area in view</td><td data-label="What for">Showing the map (data © OpenStreetMap contributors)</td></tr>
                 <tr><th scope="row">Google Maps</th><td data-label="What it receives">IP address, device data, map gestures on the traffic screen</td><td data-label="What for">Map, satellite and traffic view</td></tr>
                 <tr><th scope="row">Search and routing services</th><td data-label="What it receives">Start, destination, vehicle; search text and approximate location</td><td data-label="What for">Planning routes, speed limits and cameras; returning search results</td></tr>
+                <tr><th scope="row"><a href="https://www.met.no/en/about-us/privacy">MET Norway</a></th><td data-label="What it receives">Current GPS coordinates rounded to two decimal places, IP address, app identification</td><td data-label="What for">Returning weather at your current location while you navigate</td></tr>
                 <tr><th scope="row">Sign-in with Google</th><td data-label="What it receives">Sign-in identity</td><td data-label="What for">Signing in</td></tr>
                 <tr><th scope="row">Google Play</th><td data-label="What it receives">Product ID, purchase token</td><td data-label="What for">Buying and restoring Premium</td></tr>
                 <tr><th scope="row">Platform services</th><td data-label="What it receives">Device attestation result; notification token</td><td data-label="What for">Device attestation; sending notifications</td></tr>
@@ -106,6 +109,8 @@
                 <tr><th scope="row">Account (account ID, name, email)</th><td data-label="Kept until">You delete your account</td></tr>
                 <tr><th scope="row">Sign-in session</th><td data-label="Kept until">You sign out, sign in on another phone or delete your account</td></tr>
                 <tr><th scope="row">Location, route and search requests</th><td data-label="Kept until">They are answered; the server's operational logs are kept only briefly for troubleshooting</td></tr>
+                <tr><th scope="row">Weather results in the app</th><td data-label="Kept until">Only in memory to reduce repeated requests; no weather history is written to storage</td></tr>
+                <tr><th scope="row">Weather request logs at MET Norway</th><td data-label="Kept until">MET logs the IP address and requested coordinates in Oslo, Norway. Processing and retention follow MET's own policy. See <a href="https://docs.api.met.no/doc/TermsOfService.html#personal-data">MET's data terms</a> and the policy linked above.</td></tr>
                 <tr><th scope="row">Speeds on roads (no account attached)</th><td data-label="Kept until">14 days; after that only averages remain</td></tr>
                 <tr><th scope="row">Abuse-prevention counters</th><td data-label="Kept until">They expire after 2 to 7 days</td></tr>
                 <tr><th scope="row">Incidents you report and their photos</th><td data-label="Kept until">The incident expires, within hours</td></tr>

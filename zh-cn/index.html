@@ -23,7 +23,7 @@
     <main>
       <article>
         <h1>隐私政策</h1>
-        <p class="updated">G Navigation Android 版 - 版本 16，最后更新：2026 年 10 月 31 日。</p>
+        <p class="updated">G Navigation Android 版 - 版本 16，最后更新：2026 年 11 月 1 日。</p>
         <p>G Navigation 是面向越南摩托车和汽车的导航应用，可将转弯指引、地图和来电发送到您的手表，由 G Navigation（“我们”）开发和运营。本页说明应用收集哪些数据、用于什么、保存多久、谁能看到以及您如何掌控。本政策遵循越南《个人数据保护法》第 91/2025/QH15 号及第 356/2025/NĐ-CP 号议定。</p>
         <p><strong>简要原则：</strong>应用没有广告，不使用广告标识符，不出售或为营销目的共享您的数据。服务器不保存与您关联的移动记录。通知、通讯录、通话、麦克风和相机仅在您开启需要它们的功能时使用。</p>
         <section id="collect">
@@ -36,6 +36,8 @@
             <li><strong>在设备上：</strong>在地图上显示您的位置、将车速与限速比较并逐个路口导航。导航时，应用会在后台继续读取位置，以免屏幕关闭时丢失指引；后台位置为可选权限，单独请求。</li>
             <li><strong>按每次请求发送到服务器：</strong>正在查看的地图区域，用于返回周边的地图、标志、摄像头和限速；起点、终点和车辆类型，用于规划路线；位置和方向，用于偏离路线时重新规划；当前位置连同您输入的文字，用于按距离排列搜索结果。这些请求答复后即结束；服务器不保存与您关联的移动记录。行程中的位置和速度（不附带账户）也会用于改进路线规划和到达时间。</li>
           </ul>
+          <h3>当前天气</h3>
+          <p>仅在导航期间，应用将当前 GPS 位置四舍五入至小数点后两位，通过 HTTPS 直接发送给 MET Norway，以获取当地天气。MET 会接收坐标、IP 地址和应用识别信息；此请求不发送账户信息或完整路线。</p>
           <h3>语音搜索</h3>
           <p>当您点按麦克风时，语音在手机上转换为文字；只有您选择在线识别服务时，音频才会按其政策发送给该服务。我们只接收识别出的文字，不接收也不保存录音。应用仅在麦克风开启时收听。</p>
           <h3>社区报告</h3>
@@ -83,6 +85,7 @@
                 <tr><th scope="row">地图服务</th><td data-label="接收什么">IP 地址、正在查看的地图区域</td><td data-label="用于什么">显示地图（数据 © OpenStreetMap 贡献者）</td></tr>
                 <tr><th scope="row">Google 地图</th><td data-label="接收什么">打开路况和事故页面时的 IP 地址、设备信息、地图操作</td><td data-label="用于什么">显示地图、卫星图像和路况</td></tr>
                 <tr><th scope="row">搜索和路线服务</th><td data-label="接收什么">起点、终点、车辆类型；搜索文字和大致位置</td><td data-label="用于什么">规划路线、限速和摄像头；返回搜索结果</td></tr>
+                <tr><th scope="row"><a href="https://www.met.no/en/about-us/privacy">MET Norway</a></th><td data-label="接收什么">四舍五入至小数点后两位的当前 GPS 坐标、IP 地址、应用识别信息</td><td data-label="用于什么">导航期间返回当前位置的天气</td></tr>
                 <tr><th scope="row">使用 Google 登录</th><td data-label="接收什么">登录身份</td><td data-label="用于什么">登录</td></tr>
                 <tr><th scope="row">Google Play</th><td data-label="接收什么">商品 ID、购买凭证</td><td data-label="用于什么">购买和恢复 Premium</td></tr>
                 <tr><th scope="row">平台服务</th><td data-label="接收什么">设备认证结果；通知令牌</td><td data-label="用于什么">设备认证；发送通知</td></tr>
@@ -106,6 +109,8 @@
                 <tr><th scope="row">账户（账户 ID、姓名、电子邮件）</th><td data-label="保存至">您删除账户</td></tr>
                 <tr><th scope="row">登录会话</th><td data-label="保存至">您退出登录、在其他手机上登录或删除账户</td></tr>
                 <tr><th scope="row">位置、路线和搜索请求</th><td data-label="保存至">答复完成；服务器的运行日志仅短期保存以排查故障</td></tr>
+                <tr><th scope="row">应用中的天气结果</th><td data-label="保存至">仅在内存中缓存以减少重复请求；不将天气历史写入手机存储</td></tr>
+                <tr><th scope="row">MET Norway 的天气请求日志</th><td data-label="保存至">MET 在挪威奥斯陆记录 IP 地址和请求坐标。处理及保存期限遵循 MET 自身的政策。请参阅 <a href="https://docs.api.met.no/doc/TermsOfService.html#personal-data">MET 数据条款</a>及上方链接的隐私政策。</td></tr>
                 <tr><th scope="row">路段速度（不附带账户）</th><td data-label="保存至">14 天；之后仅保留平均值</td></tr>
                 <tr><th scope="row">防滥用计数</th><td data-label="保存至">2 到 7 天后自动失效</td></tr>
                 <tr><th scope="row">您报告的事件及照片</th><td data-label="保存至">事件到期，通常在数小时内</td></tr>
